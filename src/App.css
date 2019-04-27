@@ -27,10 +27,16 @@
   border: 5px;
 }
 
+@media all {
+
+  body {
+    border-radius: 5px;
+  }
+}
+
 .App-link {
   color: #61dafb;
 }
-
 @keyframes App-logo-spin {
 
   from {
@@ -39,12 +45,5 @@
 
   to {
     transform: rotate(360deg);
-  }
-}
-
-@media all {
-
-  body {
-    border-radius: 5px;
   }
 }
