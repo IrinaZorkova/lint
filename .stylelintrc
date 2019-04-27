@@ -1,21 +1,14 @@
 {
   "plugins": [
-    "stylelint-order"
+    "stylelint-order",
+    "stylelint-config-rational-order/plugin"
   ],
   "rules": {
-    "order/properties-order": [
-      [
-        "position",
-        "z-index",
-        "display",
-        "flex-direction",
-        "bottom",
-        "left"
-      ],
-      {
-        "unspecified": "bottom"
-      }
-    ],
+    "order/properties-order": [],
+    "plugin/rational-order": [true, {
+      "border-in-box-model": false,
+      "empty-line-between-groups": true,
+    }],
     "indentation": 2,
     "string-quotes": "single",
     "declaration-colon-space-before": "never",
@@ -32,6 +25,7 @@
     "property-blacklist": ["float"]
   },
   "extends": [
-    "stylelint-config-prettier"
+    "stylelint-config-prettier",
+    "stylelint-config-rational-order"
   ]
 }
