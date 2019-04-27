@@ -41,13 +41,13 @@
   "lint-staged": {
     "linters": {
       "*.css": [
-        "prettier --write",
-        "stylelint --fix --config ./.stylelintrc",
+        "node_modules/.bin/prettier --write",
+        "node_modules/.bin/stylelint --fix --config ./.stylelintrc",
         "git add"
       ],
       "*.{js, jsx}": [
         "node_modules/.bin/eslint --max-warnings=0 --fix",
-        "prettier --write",
+        "node_modules/.bin/prettier --write",
         "git add"
       ]
     }
